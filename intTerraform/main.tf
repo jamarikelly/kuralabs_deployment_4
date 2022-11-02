@@ -8,7 +8,7 @@ provider "aws" {
   
 }
 
-resource "aws_instance" "web_server01" {
+resource "aws_instance" "web_server0001" {
   ami = "ami-08c40ec9ead489470"
   instance_type = "t2.micro"
   key_name = "datadog"
