@@ -21,3 +21,10 @@ wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update && sudo apt install terraform
 ```
+
+#### 2. Now, configure jenkins to be able to save aws access and aws secret keys, config steps given below: 
+
+```
+- After signing into jenkins GUI, click on manage jenkins and then select manage credentials
+- slect Global, after that, look at the right hand side, select Add credentials.
+- Now time for your credentials, follow exandple as showing htere
