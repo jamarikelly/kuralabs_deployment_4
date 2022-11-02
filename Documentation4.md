@@ -27,4 +27,38 @@ sudo apt update && sudo apt install terraform
 ```
 - After signing into jenkins GUI, click on manage jenkins and then select manage credentials
 - slect Global, after that, look at the right hand side, select Add credentials.
-- Now time for your credentials, follow exandple as showing htere
+- Now time for your credentials, follow the outline shown below:
+                                  Select "Secret text" for kind
+                                  Scope should be Global
+                                  Secret: Copy and Paste your aws access key 
+                                  Id: AWS_ACCESS_KEY
+                                  select create. 
+                                  
+                                  now repeat process but substitute "aws access key" for "aws secret key"
+ ```
+ 
+ #### 3. create jenkins pipline and start build, the link shows what should happen if your build is successful. https://github.com/jamarikelly/kuralabs_deployment_4/blob/main/images/Screen%20Shot%202022-10-31%20at%202.14.54%20PM.png
+ 
+ 
+ 
+## Problems while doing the deployment: 
+
+* The problems I had were with editing the jenkins file, i had to make sure the key was similar to the one I had in my aws account, also i had to 
+  install jenkins plugin "keep alive" to be able to see the application. 
+  
+* As usual, remember to install all dependencies.
+
+
+## Improvements for deployment: 
+
+* Could write a scrip to stremline the editing credentials part.
+
+
+
+#### A diagram of pipeline is shown by clicking the link provided. https://github.com/jamarikelly/kuralabs_deployment_4/blob/main/images/deploy4.drawio.png
+ 
+ 
+ 
+ 
+ 
+ 
